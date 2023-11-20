@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.punimi.SceneController">
+   <center>
+      <AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="892.0" style="-fx-background-color: DAF5FF; -fx-border-color: Black;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="pyetjaTextFieldID" layoutX="292.0" layoutY="75.0" onAction="#submit" prefHeight="59.0" prefWidth="184.0" />
+            <Label alignment="CENTER" layoutX="292.0" layoutY="46.0" prefHeight="18.0" prefWidth="184.0" text="Shëno pyetjen:" />
+            <CheckBox layoutX="408.0" layoutY="143.0" mnemonicParsing="false" onAction="#opsionetCheckBox" prefHeight="59.0" prefWidth="101.0" text="Me opsione?" />
+            <TextField fx:id="opsioni1TextFieldID" alignment="CENTER" layoutX="246.0" layoutY="203.0" onAction="#submit" prefHeight="46.0" prefWidth="102.0" promptText="Opsioni 1" visible="false" />
+            <TextField fx:id="opsioni2TextFieldID" alignment="CENTER" layoutX="407.0" layoutY="226.0" prefHeight="46.0" prefWidth="102.0" promptText="Opsioni 2" visible="false" />
+            <TextField fx:id="piketTextFieldID" layoutX="510.0" layoutY="75.0" onAction="#submit" prefHeight="59.0" prefWidth="67.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="509.0" layoutY="46.0" prefHeight="18.0" prefWidth="69.0" text="Shëno Pikët" textAlignment="CENTER" />
+            <Button fx:id="submitButtonId" layoutX="365.0" layoutY="305.0" mnemonicParsing="false" onAction="#submit" prefHeight="34.0" prefWidth="175.0" style="-fx-background-color: #fff4d2; -fx-border-color: Black;" text="Submit" />
+            <Button alignment="CENTER" layoutX="-3.0" layoutY="453.0" mnemonicParsing="false" onAction="#switchToScene" prefHeight="59.0" prefWidth="899.0" style="-fx-background-color: #fff4d2; -fx-border-color: Black;" text="Go Back" />
+            <TextField fx:id="opsioni3TextFieldID" alignment="CENTER" layoutX="544.0" layoutY="203.0" prefHeight="46.0" prefWidth="102.0" promptText="Opsioni 3" visible="false" />
+            <Button layoutX="405.0" layoutY="359.0" mnemonicParsing="false" onAction="#butoniDelete" style="-fx-background-color: FA9884; -fx-border-color: Black;" text="Fshij një pyetje" />
+            <TextField fx:id="DeleteQuestionNumberID" layoutX="309.0" layoutY="406.0" onAction="#submitDelete" promptText="Shkruj numërin e pyetjes" visible="false" />
+            <Label layoutX="38.0" layoutY="287.0" />
+            <Button fx:id="submitDeleteButtonId" layoutX="491.0" layoutY="405.0" mnemonicParsing="false" onAction="#submitDelete" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: #fff4d2; -fx-border-color: Black;" text="Submit" visible="false" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

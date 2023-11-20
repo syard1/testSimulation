@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.punimi.SceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff4d2" height="556.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="783.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8ead8" height="383.0" layoutX="194.0" stroke="BLACK" strokeType="INSIDE" width="587.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eddbc7" height="345.0" layoutY="203.0" stroke="BLACK" strokeType="INSIDE" width="587.0" />
+      <Button fx:id="VendosiPytjetButtonID" layoutX="194.0" layoutY="160.0" mnemonicParsing="false" onAction="#switchToVendosiPytjetScene" prefHeight="62.0" prefWidth="427.0" style="-fx-border-color: Black; -fx-background-color: AEE2FF;" text="Vendosi Pyetjet" textFill="#151515" />
+      <Button layoutX="194.0" layoutY="240.0" mnemonicParsing="false" onAction="#switchToGjeneroTestinScene" prefHeight="62.0" prefWidth="427.0" style="-fx-background-color: AEE2FF; -fx-border-color: Black;" text="Gjenero Testin" />
+      <Button layoutX="194.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToGjeneroTeGjithaPyetjetScene" prefHeight="62.0" prefWidth="427.0" style="-fx-background-color: AEE2FF; -fx-border-color: Black;" text="Gjenero te gjitha pyetjet" />
+      <ImageView fx:id="finger1Id" fitHeight="62.0" fitWidth="69.0" layoutX="101.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../finger.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="finger3Id" fitHeight="62.0" fitWidth="69.0" layoutX="101.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../finger.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="finger2Id" fitHeight="62.0" fitWidth="69.0" layoutX="101.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../finger.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
